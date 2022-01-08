@@ -21,11 +21,11 @@ class ProductManagerTest {
     @InjectMocks
     private ProductManager manager;
     private Book book1 = new Book(1, "Anatomical Atlas", 100, "Trevor Weston");
-    private Smartphone smartphone1 = new Smartphone(2, "Z1", 10_000, "Sony");
-    private Book book2 = new Book(3, "Anatomical Atlas", 100, "Sinelnikov");
-    private Smartphone smartphone2 = new Smartphone(4, "Note", 10_000, "Sony");
-    private Book book3 = new Book(5, "Life", 100, "Smith");
-    private Smartphone smartphone3 = new Smartphone(6, "S9", 10_000, "Samsung");
+    private Smartphone smartphone1 = new Smartphone(11, "Z1", 10_000, "Sony");
+    private Book book2 = new Book(2, "Anatomical Atlas", 100, "Sinelnikov");
+    private Smartphone smartphone2 = new Smartphone(22, "Note", 10_000, "Sony");
+    private Book book3 = new Book(3, "Life", 100, "Smith");
+    private Smartphone smartphone3 = new Smartphone(33, "S9", 10_000, "Samsung");
 
     @BeforeEach
     public void setUp() {
@@ -102,5 +102,4 @@ class ProductManagerTest {
 
         assertArrayEquals(expected, actual);
     }
-
 }

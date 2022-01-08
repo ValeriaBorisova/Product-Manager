@@ -27,8 +27,17 @@ public class ProductRepository {
         return null;
     }
 
+    private boolean isExistsId(int id) {
+        for (Product item : items) {
+            if (item.getId() == id) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void removeById(int id) {
-        if (findById(id) == null) {
+        if (!isExistsId(id)) {
             return;
         }
         int length = items.length - 1;
